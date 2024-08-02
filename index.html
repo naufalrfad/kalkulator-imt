@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator IMT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="calculatorPage">
+            <h1>Periksa Indeks Massa Tubuh (IMT) Anda dengan Kalkulator IMT</h1>
+            <p>Indeks Massa Tubuh (IMT) adalah salah satu cara untuk mengukur ukuran tubuh. IMT adalah alat untuk memperkirakan lemak tubuh dan screening obesitas serta risiko kesehatan. IMT dapat dihitung dengan kalkulator IMT dan menggolongkan orang sebagai orang yang kekurangan berat badan, kelebihan berat badan, dan obesitas berdasarkan tinggi dan berat badan.</p>
+            <div class="input-group">
+                <label for="height">Tinggi Badan (cm):</label>
+                <input type="number" id="height" required>
+            </div>
+            <div class="input-group">
+                <label for="weight">Berat Badan (kg):</label>
+                <input type="number" id="weight" required>
+            </div>
+            <button onclick="calculateIMT()">Hitung IMT</button>
+        </div>
+
+        <div id="resultPage" class="hidden">
+            <h1>Hasil IMT Anda</h1>
+            <div class="result-group">
+                <div class="circle" id="classification">Klasifikasi</div>
+                <div class="circle" id="imtResult">IMT</div>
+            </div>
+            <div class="imt-range">
+                <div class="line"></div>
+                <div class="pointer" id="pointer"></div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Klasifikasi</th>
+                        <th>IMT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Berat badan kurang (Underweight)</td>
+                        <td>Below 18.5</td>
+                    </tr>
+                    <tr>
+                        <td>Normal</td>
+                        <td>18.5-22.9</td>
+                    </tr>
+                    <tr>
+                        <td>Kelebihan berat badan (Overweight)</td>
+                        <td>23-24.9</td>
+                    </tr>
+                    <tr>
+                        <td>Obesitas I</td>
+                        <td>25-29.9</td>
+                    </tr>
+                    <tr>
+                        <td>Obesitas II</td>
+                        <td>30 and above</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button onclick="goBack()">Hitung Lagi</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
