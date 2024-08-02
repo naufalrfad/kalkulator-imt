@@ -101,6 +101,7 @@ button:hover {
 .circle p {
     margin: 0;
     font-size: 12px;
+    color: white;
 }
 
 .circle h2 {
