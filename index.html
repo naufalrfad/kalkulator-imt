@@ -13,11 +13,13 @@
             <p>Indeks Massa Tubuh (IMT) adalah salah satu cara untuk mengukur ukuran tubuh. IMT adalah alat untuk memperkirakan lemak tubuh dan screening obesitas serta risiko kesehatan. IMT dapat dihitung dengan kalkulator IMT dan menggolongkan orang sebagai orang yang kekurangan berat badan, kelebihan berat badan, dan obesitas berdasarkan tinggi dan berat badan.</p>
             <div class="input-group">
                 <label for="height">Tinggi Badan:</label>
-                <input type="number" id="height" min="45" max="250" placeholder="cm" required>
+                <input type="number" id="height" min="45" max="250" placeholder="Masukkan tinggi badan">
+                <span>cm</span>
             </div>
             <div class="input-group">
                 <label for="weight">Berat Badan:</label>
-                <input type="number" id="weight" min="2" max="200" placeholder="kg" required>
+                <input type="number" id="weight" min="2" max="200" placeholder="Masukkan berat badan">
+                <span>kg</span>
             </div>
             <button onclick="calculateIMT()">Hitung IMT</button>
         </div>
@@ -41,7 +43,6 @@
                     <div class="bar overweight"></div>
                     <div class="bar obesity1"></div>
                     <div class="bar obesity2"></div>
-                    <div class="bar obesity3"></div>
                 </div>
                 <div class="pointer" id="pointer"></div>
             </div>
@@ -54,31 +55,28 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Under 18.5</td>
+                        <td>Below 18.5</td>
                         <td>Berat badan kurang (Underweight)</td>
                     </tr>
                     <tr>
-                        <td>18.5 - 24.9</td>
+                        <td>18.5 - 22.9</td>
                         <td>Normal</td>
                     </tr>
                     <tr>
-                        <td>25 - 29.9</td>
+                        <td>23 - 24.9</td>
                         <td>Kelebihan berat badan (Overweight)</td>
                     </tr>
                     <tr>
-                        <td>30 - 34.9</td>
+                        <td>25 - 29.9</td>
                         <td>Obesitas I</td>
                     </tr>
                     <tr>
-                        <td>35 - 39.9</td>
+                        <td>30 and above</td>
                         <td>Obesitas II</td>
-                    </tr>
-                    <tr>
-                        <td>Over 40</td>
-                        <td>Obesitas III</td>
                     </tr>
                 </tbody>
             </table>
+            <p class="source">Sumber: WHO Western Pacific Region, 2020</p>
             <button onclick="goBack()">Hitung Lagi</button>
         </div>
     </div>
