@@ -5,11 +5,11 @@ function calculateIMT() {
 
     var classification = '';
     if (imt < 18.5) {
-        classification = 'Underweight';
+        classification = 'Berat badan kurang (Underweight)';
     } else if (imt >= 18.5 && imt <= 22.9) {
         classification = 'Normal';
     } else if (imt >= 23 && imt <= 24.9) {
-        classification = 'Overweight';
+        classification = 'Kelebihan berat badan (Overweight)';
     } else if (imt >= 25 && imt <= 29.9) {
         classification = 'Obesitas I';
     } else if (imt >= 30) {
