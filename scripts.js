@@ -5,15 +5,17 @@ function calculateIMT() {
 
     var classification = '';
     if (imt < 18.5) {
-        classification = 'Berat badan kurang (Underweight)';
-    } else if (imt >= 18.5 && imt <= 22.9) {
+        classification = 'Berat badan kurang';
+    } else if (imt >= 18.5 && imt <= 24.9) {
         classification = 'Normal';
-    } else if (imt >= 23 && imt <= 24.9) {
-        classification = 'Kelebihan berat badan (Overweight)';
     } else if (imt >= 25 && imt <= 29.9) {
+        classification = 'Kelebihan berat badan';
+    } else if (imt >= 30 && imt <= 34.9) {
         classification = 'Obesitas I';
-    } else if (imt >= 30) {
+    } else if (imt >= 35 && imt <= 39.9) {
         classification = 'Obesitas II';
+    } else if (imt >= 40) {
+        classification = 'Obesitas III';
     }
 
     document.getElementById('classification').innerText = classification;
