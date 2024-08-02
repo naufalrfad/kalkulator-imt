@@ -12,12 +12,12 @@
             <h1>Periksa Indeks Massa Tubuh (IMT) Anda dengan Kalkulator IMT</h1>
             <p>Indeks Massa Tubuh (IMT) adalah salah satu cara untuk mengukur ukuran tubuh. IMT adalah alat untuk memperkirakan lemak tubuh dan screening obesitas serta risiko kesehatan. IMT dapat dihitung dengan kalkulator IMT dan menggolongkan orang sebagai orang yang kekurangan berat badan, kelebihan berat badan, dan obesitas berdasarkan tinggi dan berat badan.</p>
             <div class="input-group">
-                <label for="height">Tinggi Badan (cm):</label>
-                <input type="number" id="height" required>
+                <label for="height">Tinggi Badan:</label>
+                <input type="number" id="height" min="45" max="250" placeholder="cm" required>
             </div>
             <div class="input-group">
-                <label for="weight">Berat Badan (kg):</label>
-                <input type="number" id="weight" required>
+                <label for="weight">Berat Badan:</label>
+                <input type="number" id="weight" min="2" max="200" placeholder="kg" required>
             </div>
             <button onclick="calculateIMT()">Hitung IMT</button>
         </div>
@@ -58,7 +58,7 @@
                     </tr>
                     <tr>
                         <td>Obesitas II</td>
-                        <td>30 and above</td>
+                        <td>lebih dari 30</td>
                     </tr>
                 </tbody>
             </table>
