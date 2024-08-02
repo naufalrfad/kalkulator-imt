@@ -33,3 +33,8 @@ function goBack() {
     document.getElementById('calculatorPage').classList.remove('hidden');
     document.getElementById('resultPage').classList.add('hidden');
 }
+
+document.addEventListener('keypress', (event) => {
+        if (event.key === 'Enter') {
+            calculateBMI();
+        }
