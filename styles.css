@@ -124,11 +124,11 @@ button:hover {
     height: 20px;
 }
 
-.bar.underweight { background-color: #FF6F61; width: 18.5%; }
-.bar.normal { background-color: #58D68D; width: 22.9%; }
-.bar.overweight { background-color: ##F7D358; width: 24.9%; }
-.bar.obesity1 { background-color: ##FF6F61; width: 34.9%; }
-.bar.obesity2 { background-color: #A11915; width: 30%; }
+.bar.underweight { background-color: #FF0000; width: 18.5%; }
+.bar.normal { background-color: #00FF00; width: 22.9%; }
+.bar.overweight { background-color: #FFFF00; width: 24.9%; }
+.bar.obesity1 { background-color: #FF0000; width: 34.9%; }
+.bar.obesity2 { background-color: #8B0000; width: 30%; }
 
 .pointer {
     position: absolute;
