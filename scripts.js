@@ -20,7 +20,9 @@ function calculateIMT() {
     document.getElementById('imtResult').innerText = imt;
 
     var pointer = document.getElementById('pointer');
-    var percentage = (imt - 10) * 5;
+    var percentage = ((imt - 10) * 5).toFixed(1);
+    if (percentage < 0) percentage = 0;
+    if (percentage > 100) percentage = 100;
     pointer.style.left = `calc(${percentage}% - 5px)`;
 
     document.getElementById('calculatorPage').classList.add('hidden');
