@@ -78,10 +78,21 @@ button:hover {
     background-color: #007BFF;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 16px;
     text-align: center;
+}
+
+.circle p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.circle h2 {
+    margin: 0;
+    font-size: 24px;
 }
 
 .imt-range {
@@ -92,9 +103,19 @@ button:hover {
 }
 
 .line {
-    height: 20px;
-    background: linear-gradient(to right, #0000ff, #008000, #ffff00, #ffa500, #ff0000);
+    display: flex;
 }
+
+.bar {
+    height: 20px;
+}
+
+.bar.underweight { background-color: blue; width: 15%; }
+.bar.normal { background-color: green; width: 25%; }
+.bar.overweight { background-color: yellow; width: 10%; }
+.bar.obesity1 { background-color: orange; width: 10%; }
+.bar.obesity2 { background-color: red; width: 10%; }
+.bar.obesity3 { background-color: brown; width: 30%; }
 
 .pointer {
     position: absolute;
