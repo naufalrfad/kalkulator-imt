@@ -1,3 +1,24 @@
+document.addEventListener('DOMContentLoaded', function() {
+    var heightInput = document.getElementById('height');
+    var weightInput = document.getElementById('weight');
+    var calculateButton = document.querySelector('#calculatorPage button');
+
+    // Function to trigger the IMT calculation
+    function handleEnterKey(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault(); // Prevent form submission if in a form
+            calculateIMT();
+        }
+    }
+
+    // Add keypress event listeners to both input fields
+    heightInput.addEventListener('keypress', handleEnterKey);
+    weightInput.addEventListener('keypress', handleEnterKey);
+
+    // Add click event listener to the button
+    calculateButton.addEventListener('click', calculateIMT);
+});
+
 function calculateIMT() {
     var height = document.getElementById('height').value / 100;
     var weight = document.getElementById('weight').value;
