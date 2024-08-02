@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,53 +12,59 @@ body {
 .container {
     max-width: 600px;
     background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
+    font-size: 24px;
+    color: #333;
     margin-bottom: 20px;
 }
 
 p {
-    text-align: left;
-    margin-bottom: 30px;
     font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+    text-align: left;
 }
 
 .input-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-label {
-    width: 150px;
-}
-
 input {
-    width: calc(100% - 160px);
+    width: calc(100% - 60px);
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    font-size: 14px;
+}
+
+span {
+    font-size: 14px;
+    color: #666;
 }
 
 button {
     width: 100%;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #28a745;
     color: #fff;
     border: none;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #218838;
 }
 
 .hidden {
@@ -75,7 +81,7 @@ button:hover {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background-color: #007BFF;
+    background-color: #28a745;
     color: white;
     display: flex;
     flex-direction: column;
@@ -110,12 +116,11 @@ button:hover {
     height: 20px;
 }
 
-.bar.underweight { background-color: blue; width: 15%; }
-.bar.normal { background-color: green; width: 25%; }
-.bar.overweight { background-color: yellow; width: 10%; }
-.bar.obesity1 { background-color: orange; width: 10%; }
-.bar.obesity2 { background-color: red; width: 10%; }
-.bar.obesity3 { background-color: brown; width: 30%; }
+.bar.underweight { background-color: #dc3545; width: 18.5%; }
+.bar.normal { background-color: #28a745; width: 22.9%; }
+.bar.overweight { background-color: #ffc107; width: 24.9%; }
+.bar.obesity1 { background-color: #dc3545; width: 34.9%; }
+.bar.obesity2 { background-color: #6c757d; width: 30%; }
 
 .pointer {
     position: absolute;
@@ -123,6 +128,7 @@ button:hover {
     width: 10px;
     height: 30px;
     background-color: #000;
+    transition: left 0.3s ease;
 }
 
 table {
@@ -139,4 +145,11 @@ th, td {
 
 th {
     background-color: #f4f4f4;
+}
+
+.source {
+    font-size: 12px;
+    color: #666;
+    text-align: left;
+    margin-top: -10px;
 }
