@@ -128,7 +128,7 @@ button:hover {
 .bar.normal { background-color: #58D68D; width: 22.9%; }
 .bar.overweight { background-color: ##F7D358; width: 24.9%; }
 .bar.obesity1 { background-color: ##FF6F61; width: 34.9%; }
-.bar.obesity2 { background-color: #C0392B; width: 30%; }
+.bar.obesity2 { background-color: #A11915; width: 30%; }
 
 .pointer {
     position: absolute;
