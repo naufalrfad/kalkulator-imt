@@ -45,7 +45,7 @@ p {
 }
 
 input {
-    width: 80px; /* Adjusted width for input fields */
+    width: 80px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -100,6 +100,7 @@ button:hover {
     align-items: center;
     font-size: 16px;
     text-align: center;
+    overflow-wrap: break-word; /* Ensures text stays within the circle */
 }
 
 .circle p {
@@ -113,4 +114,10 @@ button:hover {
     font-size: 24px;
 }
 
-.imt-range
+.imt-range {
+    margin-bottom: 20px;
+}
+
+.line {
+    display: flex;
+   
