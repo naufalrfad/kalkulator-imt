@@ -27,12 +27,12 @@ h1 {
 p {
     font-size: 14px;
     color: #666;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: left;
 }
 
 .input-group {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +45,7 @@ p {
 }
 
 input {
-    width: 80px;
+    width: 120px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -68,6 +68,7 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 20px;
 }
 
 button:hover {
@@ -82,10 +83,6 @@ button:hover {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
-}
-
-.result-group .circle {
-    margin: 0 10px; /* Add margin between circles */
 }
 
 .circle {
@@ -120,4 +117,64 @@ button:hover {
 
 .line {
     display: flex;
-   
+    height: 10px;
+    border: 1px solid #ddd;
+}
+
+.bar {
+    flex: 1;
+}
+
+.underweight {
+    background-color: #f4a582;
+}
+
+.normal {
+    background-color: #92c5de;
+}
+
+.overweight {
+    background-color: #d5d5d5;
+}
+
+.obesity1 {
+    background-color: #ffeda0;
+}
+
+.obesity2 {
+    background-color: #f4a582;
+}
+
+.pointer {
+    position: relative;
+    top: -8px;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.source {
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+}
