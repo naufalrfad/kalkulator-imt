@@ -45,7 +45,7 @@ p {
 }
 
 input {
-    width: calc(100% - 120px);
+    width: calc(100% - 160px);
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -82,6 +82,10 @@ button:hover {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
+}
+
+.result-group .circle {
+    margin: 0 10px;
 }
 
 .circle {
@@ -124,40 +128,4 @@ button:hover {
     height: 20px;
 }
 
-.bar.underweight { background-color: #FF0000; width: 18.5%; }
-.bar.normal { background-color: #00FF00; width: 22.9%; }
-.bar.overweight { background-color: #FFFF00; width: 24.9%; }
-.bar.obesity1 { background-color: #FF0000; width: 34.9%; }
-.bar.obesity2 { background-color: #8B0000; width: 30%; }
-
-.pointer {
-    position: absolute;
-    top: -5px;
-    width: 10px;
-    height: 30px;
-    background-color: #000;
-    transition: left 0.3s ease;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
-
-th {
-    background-color: #f4f4f4;
-}
-
-.source {
-    font-size: 12px;
-    color: #666;
-    text-align: left;
-    margin-top: -10px;
-}
+.bar.underweight { background-color: #FF6347;
