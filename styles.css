@@ -27,12 +27,12 @@ h1 {
 p {
     font-size: 14px;
     color: #666;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: left;
 }
 
 .input-group {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,18 +44,17 @@ p {
     margin-right: 10px;
 }
 
-input {
-    width: calc(100% - 160px);
-    padding: 10px;
+.input-group input {
+    width: 100px;
+    padding: 5px;
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 14px;
 }
 
-span {
+.input-group span {
     font-size: 14px;
     color: #666;
-    margin-left: 10px;
 }
 
 button {
@@ -68,6 +67,7 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 20px;
 }
 
 button:hover {
@@ -78,19 +78,20 @@ button:hover {
     display: none;
 }
 
+.error {
+    color: red;
+    margin-bottom: 15px;
+}
+
 .result-group {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
 }
 
-.result-group .circle {
-    margin: 0 10px;
-}
-
 .circle {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     background-color: #28a745;
     color: white;
@@ -105,27 +106,78 @@ button:hover {
 .circle p {
     margin: 0;
     font-size: 12px;
-    color: white;
-}
-
-.circle h2 {
-    margin: 0;
-    font-size: 24px;
 }
 
 .imt-range {
-    position: relative;
-    height: 20px;
-    background-color: #ddd;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .line {
+    position: relative;
+    height: 10px;
+    background-color: #ddd;
     display: flex;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .bar {
-    height: 20px;
+    height: 100%;
 }
 
-.bar.underweight { background-color: #FF6347;
+.bar.underweight {
+    width: 18.5%;
+    background-color: #ffc107;
+}
+
+.bar.normal {
+    width: 18.5%;
+    background-color: #28a745;
+}
+
+.bar.overweight {
+    width: 6.4%;
+    background-color: #ffc107;
+}
+
+.bar.obesity1 {
+    width: 11.9%;
+    background-color: #dc3545;
+}
+
+.bar.obesity2 {
+    width: 44.7%;
+    background-color: #6c757d;
+}
+
+.pointer {
+    position: absolute;
+    top: -5px;
+    width: 10px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 3px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f8f8;
+}
+
+.source {
+    font-size: 12px;
+    color: #666;
+    text-align: left;
+    margin-bottom: 20px;
+}
