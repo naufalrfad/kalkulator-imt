@@ -22,6 +22,15 @@ document.addEventListener('DOMContentLoaded', function() {
 function calculateIMT() {
     var height = document.getElementById('height').value / 100;
     var weight = document.getElementById('weight').value;
+    var errorMessage = document.getElementById('error-message');
+
+    if (!height || !weight) {
+        errorMessage.classList.remove('hidden');
+        return;
+    }
+
+    errorMessage.classList.add('hidden');
+
     var imt = (weight / (height * height)).toFixed(1);
 
     var classification = '';
