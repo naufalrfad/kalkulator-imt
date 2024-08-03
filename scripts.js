@@ -59,4 +59,3 @@ document.addEventListener('DOMContentLoaded', function() {
     weightInput.addEventListener('keypress', handleEnterKey);
     calculateButton.addEventListener('click', calculateIMT);
 });
-
